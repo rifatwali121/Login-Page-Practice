@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page One</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        background-color: #2f1926;
+        color: white;
+      }
+      .container {
+        display: flex;
+      }
+      .photo img {
+        display: flex;
+        width: 600px;
+        height: 768px;
+        border-radius: 0 40px 40px 0;
+      }
+      .welcome {
+        margin: 100px 200px;
+      }
+      input[type="email"] {
+        padding: 12px 8px;
+        width: 100%;
+        border-radius: 12px;
+        background-color: white;
+        margin-bottom: 20px;
+      }
+      input[type="password"] {
+        padding: 12px 8px;
+        width: 100%;
+        background-color: white;
+        border-radius: 12px;
+      }
+      .login {
+        text-decoration: none;
+        background-color: #195a80;
+        text-align: center;
+        color: white;
+        padding: 12px 8px;
+        width: 100%;
+        margin-top: 30px;
+        display: inline-block;
+        border-radius: 8px;
+      }
+      /* .login img {
+        width: 55px;
+        height: 50px;
+      } */
+      .loginA {
+        text-decoration: none;
+        background-color: #fbfeff;
+        text-align: center;
+        color: rgb(7, 7, 7);
+        padding: 12px 8px;
+        width: 100%;
+        margin-top: 30px;
+        display: inline-block;
+        border-radius: 8px;
+        border: 2px solid black;
+        /* background-image: url(images/apple.png);
+        /* background-repeat: no-repeat; */
+        background-size: cover; */
+      }
+      .loginA:hover {
+        opacity: 0.8;
+      }
+      .loginG {
+        text-decoration: none;
+        background-color: none;
+        text-align: center;
+        color: #000000;
+        padding: 12px 8px;
+        width: 100%;
+        margin-top: 3px;
+        display: inline-block;
+        border-radius: 8px;
+        border: 2px solid black;
+      }
+      h2{
+        margin-bottom: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="photo">
+        <img src="images/Delivery-man.jpg" alt="" />
+      </div>
+      <div class="welcome">
+        <h2>Welcome Back</h2>
+        <form action="">
+          <label for="Email">Login</label> <br />
+          <input type="email" name="Email" id="email" placeholder="Email" />
+          <br />
+          <label for="password">Password</label> <br />
+          <input
+            type="password"
+            name="Password"
+            id="email"
+            placeholder="Password"
+          />
+          <br />
+
+          <a class="login" href="#">
+            <!-- <img src="images/apple.png" alt="" />-->Login</a
+          >
+
+          <br />
+          <p>
+            Don't have an account ?<span><a href="">Create account</a></span>
+          </p>
+          <br />
+          <a class="loginA" href="#">Login With Apple</a>
+          <br />
+          <br />
+          <a class="loginG" href="#">Login With Google</a>
+          <br />
+        </form>
+      </div>
+    </div>
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/b24ef6a328.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
